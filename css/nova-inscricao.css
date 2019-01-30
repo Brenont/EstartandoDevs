@@ -1,0 +1,94 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inscricoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-aviso {
+    background-color: #363435;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #7FCBA7;
+    padding: 15px 0px;
+    font-size: 22px;
+    font-family: Impact;
+    letter-spacing: 2px;
+}
+
+.bar-aviso h1 {
+    text-align: center;
+}
+
+.container-infos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-infos .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px 15px;
+    margin: 20px;
+    min-height: 370px;
+    max-width: 245px;
+    box-shadow: 1px 1px 4px 0px #808080ad;
+}
+
+.container-infos .card h2 {
+    color: #05B4A7;
+    padding: 10px 0px 20px;
+    font-family: ConfotaaBold;
+}
+
+.container-infos .card p {
+    color: #88898B;
+    padding: 5px 0px;
+    text-align: center;
+    font-family: ComfortaaRegular;
+    font-size: 18px;
+}
+
+.container-infos .card .checkmark {
+    height: 18px;
+    width: auto;
+}
+
+.info-dia {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 20px 45px;
+}
+
+.info-dia h1 {
+    /* font-family: Impact; */
+    font-size: 26px;
+    color: #5F5F5F;
+    text-align: center;
+    padding-bottom: 30px;
+    /* font-family: ConfotaaBold; */
+    font-family: sans-serif;
+
+}
+
+.info-dia button {
+    border: none;
+    background-color: #02B7A6;
+    color: #fff;
+    cursor: pointer;
+    font-family: Impact;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 25px;
+    letter-spacing: 1.5px;
+    box-shadow: 4px 3px 10px 0px #868686cf;
+}
