@@ -7,6 +7,7 @@
 .container-inscricoes {
     display: flex;
     flex-direction: column;
+    border-bottom: 0.5px solid #3f3f3fc5;
 }
 
 .bar-aviso {
@@ -16,6 +17,7 @@
     justify-content: center;
     color: #7FCBA7;
     padding: 15px 0px;
+    margin: 0px 35px;
     font-size: 22px;
     font-family: Impact;
     letter-spacing: 2px;
@@ -91,4 +93,10 @@
     border-radius: 25px;
     letter-spacing: 1.5px;
     box-shadow: 4px 3px 10px 0px #868686cf;
+}
+
+@media(max-width:768px){
+    .bar-aviso {
+        font-size: 17px;
+    }
 }
