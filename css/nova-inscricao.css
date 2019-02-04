@@ -88,11 +88,15 @@
     color: #fff;
     cursor: pointer;
     font-family: Impact;
-    font-size: 22px;
-    padding: 20px;
+    font-size: 24px;
+    padding: 20px 40px;
     border-radius: 25px;
     letter-spacing: 1.5px;
     box-shadow: 4px 3px 10px 0px #868686cf;
+}
+
+.info-dia button:focus {
+    outline: none;
 }
 
 @media(max-width:768px){
