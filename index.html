@@ -2,6 +2,16 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133727592-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133727592-1');
+</script>
+
     <meta name="theme-color" content="#357759">
     <meta name="apple-mobile-web-app-status-bar-style" content="#357759">
     <meta name="msapplication-navbutton-color" content="#357759">
@@ -11,8 +21,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:description" content="Faça sua inscrição para nossos cursos de Desenvolvimento Web ou Design UI/UX">
     <meta property="og:image" content="http://www.estartandodevs.com.br/img/fonte%20branca-min-min.png">
-    <!-- <meta property="og:image:width" content="800"> -->
-    <!-- <meta property="og:image:height" content="600"> -->
     <title>Estartando Devs</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nova-inscricao.css">
@@ -31,7 +39,7 @@
                 <a id="" href="#topo">Home </a><a>|</a>
                 <a href="#pqaprender">O que Ensinamos </a><a>|</a>
                 <a href="#nossa-historia">Nossa Historia </a><a>|</a>
-                <a href="#inscricao">Inscrições</a>
+                <a href="#aprovados">Aprovados</a>
             </li>
 
         </div>
@@ -45,7 +53,7 @@
                     <li><a type="submit" href="#topo" data-toggle=".main-content">Home</a></li>
                     <li><a href="#pqaprender" data-toggle=".main-content">O que Ensinamos</a></li>
                     <li><a href="#nossa-historia" data-toggle=".main-content">Nossa Historia</a></li>
-                    <li><a href="#inscricao" data-toggle=".main-content">Inscrições</a></li>
+                    <li><a href="#aprovados" data-toggle=".main-content">Aprovados</a></li>
                     <!-- <li><a href="#">Sign Out</a></li> -->
                 </ul>
             </div>
@@ -76,7 +84,7 @@
     </div> -->
 
     <!-- NOVAS INSCRIÇOES 2019 -->
-    <section id="inscricao" class="container-inscricoes flex-center">
+    <!-- <section id="inscricao" class="container-inscricoes flex-center">
             <div class="bar-aviso flex-center">
                 <h1>INSCRIÇÕES DE 4 À 14 DE FEVEREIRO.</h1>
             </div>
@@ -99,12 +107,24 @@
                 <div class="info-dia flex-center">
                     <h1>A PROVA SERÁ NO DIA <br> 16/02/2019, ÀS 9 HORAS. <br> CIEP 305 - HEITOR DOS PRAZERES</h1>
                     <a target="_blank" href="https://app.pipefy.com/public/form/uB1ev2u1">
-                        <button>INSCRIÇÕES</button>
+                    <a>
+                        <button>INSCRIÇÕES ENCERRADAS</button>
                     </a>
                 </div>
             </section>
-        </section>
-        
+        </section> -->
+
+    <!-- APROVADOS 2019 -->
+    <section id="aprovados" class="container-aprovados flex-center">
+        <h1>Confira a lista dos alunos classificados para a próxima etapa do processo seletivo Estartando Devs 2019.</h1>
+        <h3>Os classificados deverão comparecer ao CIEP 305 – Heitor dos Prazeres no dia 23 de fevereiro (próximo sábado), às 9 horas, para participarem da Dinâmica de Grupo.</h3>
+
+        <div class="container-list">
+            <ul class="lista-aprovados"></ul>
+        </div>
+
+        <h3>* O candidato que não estiver presente será automaticamente desclassificado do processo.</h3>
+    </section>
 
     <!-- O QUE ENSINAMOS? E POR QUE APRENDER? -->
     <section id="pqaprender" class="container-oq-ensinamos">
@@ -149,7 +169,7 @@
         <div class="idealizador">
             <img src="img/alan3-min.png" alt="" class="icon-redondo">
             <p class="ficha-pessoal nome-colaborador">Alan Araujo</p>
-            <p class="ficha-pessoal descrição-colaborador">Bacharel em Sistemas de Informação</p>
+            <p class="ficha-pessoal descrição-colaborador">Engenheiro Frontend e Bacharel em Sistemas de Informação</p>
         </div>
 
         <!-- COLABORADORES -->
@@ -185,7 +205,7 @@
                         <div class="colaborador">
                             <img src="img/fred-min.png" alt="" class="icon-redondo">
                             <p class="ficha-pessoal nome-colaborador">Frederico Bezerra</p>
-                            <p class="ficha-pessoal descrição-colaborador">Líder Técnico na NeosDev Desenvolvedor de Softwares</p>
+                            <p class="ficha-pessoal descrição-colaborador">Engenheiro de Software e Team Lead</p>
                         </div>
                         <div class="colaborador">
                             <img src="img/jonatas-min.png" alt="" class="icon-redondo">
@@ -336,7 +356,7 @@
                 </li>
                 <li>
                     <img src="./img/icons8-chevron-right-filled-50-min.png" alt="" width="12">
-                    <a href="#inscricao">Inscrições</a>
+                    <a href="#aprovados">Aprovados</a>
                 </li>
 
             </ul>
@@ -352,7 +372,7 @@
     <script src="./js/ScriptCaroucel.js"></script>
     <script src="./js/ScriptMaquinaEscrever.js"></script>
     <script src="./js/ScriptNav.js"></script>
-    <!-- <script src="./js/tabela.js"></script> -->
+    <script src="./js/aprovados2019.js"></script>
 
 </body>
 
