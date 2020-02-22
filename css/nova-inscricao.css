@@ -131,7 +131,7 @@
     font-family: ComfortaaRegular;
     color: #1a1a1a7c;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     max-width: 800px;
     padding: 25px 0px;
     margin: 0px 20px;
@@ -167,10 +167,11 @@
     .container-list{
         max-height: initial;
         flex-direction: column;
+        align-items: center;
     }
     .lista-aprovados {
         width: initial;
-        max-width: 320px;
+        /* max-width: 320px; */
     }
 
     .container-aprovados h2{
