@@ -247,6 +247,10 @@
     transition: 0.7s;
 }
 
+.botao-inscreva-se:focus {
+    outline: none;
+}
+
 
 /* CSS O QUE ENSIAMOS E POR QUE APRENDER */
 
