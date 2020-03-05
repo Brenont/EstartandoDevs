@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body hr, body .inscription-details, body header {
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font: 14px "Roboto", sans-serif;
+  background: #ecf1f8;
+  color: #333;
+  -webkit-font-smoothing: antialiased !important;
+}
+body header {
+  background-color: #f1f6f6;
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 1px 4px 0 #c0d0e6cc;
+}
+body header .logo {
+  width: 125px;
+  height: auto;
+}
+body .inscription-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px 15px;
+}
+body .inscription-details h1 {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  body .inscription-details h1 {
+    font-size: 24px;
+  }
+}
+body .inscription-details p,
+body .inscription-details li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+body .inscription-details .rules-container {
+  margin: 20px 0;
+}
+body .inscription-details .rules-container .rules-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+body .inscription-details .rules-container ul {
+  list-style-type: none;
+}
+body .inscription-details .btn-subscription {
+  padding: 10px 45px;
+  border: none;
+  box-shadow: 1px 5px 4px 0 #c0d0e6cc;
+  background-color: #57c190;
+  font-size: "Roboto", sans-serif;
+  font-size: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #ecf1f8;
+}
+body .classes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .classes-container .classes-title {
+  margin: 30px 0;
+  font-size: 26px;
+}
+body .classes-container .class-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body .classes-container .class-content h2 {
+  margin-bottom: 15px;
+}
+body .classes-container .class-content .class-img {
+  width: auto;
+  max-height: 350px;
+}
+@media (max-width: 768px) {
+  body .classes-container .class-content .class-img {
+    display: none;
+  }
+}
+body .classes-container .class-content .class-details {
+  margin: 80px 20px;
+}
+body .classes-container .class-content .class-details:nth-child(even) {
+  text-align: left;
+  margin-right: 20%;
+}
+body .classes-container .class-content .class-details:nth-child(odd) {
+  text-align: right;
+  margin-left: 20%;
+}
+body hr {
+  display: flex;
+  margin-top: 50px;
+  height: 1.5px;
+  background-color: #333;
+}
+body .text-green {
+  color: #57c190;
+}
+
+.animation {
+  opacity: 0;
+}
+
+.animation-init {
+  animation: showText 0.75s linear;
+  opacity: 1;
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

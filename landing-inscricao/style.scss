@@ -1,0 +1,171 @@
+// Variables
+$green-devs: #57c190;
+$shadow: #c0d0e6cc;
+
+// Extends
+%flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+// Importing fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font: 14px 'Roboto', sans-serif;
+  background: #ecf1f8;
+  color: #333;
+  -webkit-font-smoothing: antialiased !important;
+
+  header {
+    background-color: #f1f6f6;
+    display: flex;
+    @extend %flex-center;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 1px 4px 0 $shadow;
+
+    .logo {
+      width: 125px;
+      height: auto;
+    }
+  }
+
+  .inscription-details {
+    display: flex;
+    @extend %flex-center;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 15px;
+
+    h1 {
+      padding-bottom: 20px;
+
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    p,
+    li {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .rules-container {
+      margin: 20px 0;
+
+      .rules-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+    }
+
+    .btn-subscription {
+      padding: 10px 45px;
+      border: none;
+      box-shadow: 1px 5px 4px 0 $shadow;
+      background-color: $green-devs;
+      font-size: 'Roboto', sans-serif;
+      font-size: 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      color: #ecf1f8;
+    }
+  }
+
+  .classes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .classes-title {
+      margin: 30px 0;
+      font-size: 26px;
+    }
+
+    .class-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      .class-img {
+        width: auto;
+        max-height: 350px;
+
+        @media(max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .class-details {
+        margin: 80px 20px;
+
+        &:nth-child(even) {
+          text-align: left;
+          margin-right: 20%;
+        }
+
+        &:nth-child(odd) {
+          text-align: right;
+          margin-left: 20%;
+        }
+      }
+    }
+  }
+
+  hr {
+    display: flex;
+    @extend %flex-center;
+    // width: 100%;
+    margin-top: 50px;
+    height: 1.5px;
+    background-color: #333;
+  }
+
+  // Re-utilities classes
+  .text-green {
+    color: $green-devs;
+  }
+}
+
+.animation {
+  opacity: 0;
+}
+
+.animation-init {
+  animation: showText 0.75s linear;
+  opacity: 1;
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -882,6 +882,11 @@ iframe {
     }
 }
 
+/* Maquina de escrever */
+.imagem-maquinadeescrever .wrap {
+    height: 260px;
+}
+
 
 /* MEDIA QUERIE CARROSSEL DE DEPOIMENTOS */
 
