@@ -1,0 +1,300 @@
+// Variables
+$green-devs: #57c190;
+$shadow: #c0d0e6cc;
+$break-point: 'max-width: 768px';
+
+// Extends
+%flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+// Importing fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Space+Mono|Ubuntu+Mono&display=swap');
+// font-family: 'Space Mono', monospace;
+// font-family: 'Ubuntu Mono', monospace;
+// font-family: 'Open Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font: 14px 'Open Sans', sans-serif;
+  background: #FAFAFA;
+  color: #333;
+  -webkit-font-smoothing: antialiased !important;
+
+  header {
+    background-image: url("./img/bg.png");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    @extend %flex-center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 1px 4px 0 $shadow;
+
+    .logo {
+      width: 125px;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .description-container {
+      width: 100%;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 50px 30px 0;
+
+      p {
+        font-family: 'Space Mono', monospace;
+        color: #fff;
+        max-width: 680px;
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      @media($break-point) {
+        width: 95%;
+        margin: 0 15px 30px;
+        
+        p {
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .about-courses-section {
+    @extend %flex-center;
+    flex-direction: column;
+    margin: 40px 10px 0 10px;
+
+    .title {
+      font-weight: 500;
+      text-align: center;
+      color: #549174;
+      font-family: Ubuntu Mono;
+      margin-bottom: 15px;
+      font-size: 24px;
+
+    }
+
+    .course-details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+
+      img {
+        width: 350px;
+        height: auto;
+      }
+
+      .course-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 480px;
+
+        .subtitle {
+          font-family: Open Sans;
+          color: #606062;
+          margin-bottom: 10px;
+        }
+
+        p {
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+
+      &.scrum-container .course-text p {
+        text-align: center;
+        margin-left: 40px;
+      }
+    }
+
+    @media ($break-point) {
+      .course-details {
+        flex-direction: column;
+        margin-top: 30px;
+
+        img {
+          width: 200px;
+          margin-bottom: 15px;
+        }
+
+        &.scrum-container {
+          flex-direction: column-reverse;
+
+          img {
+            margin-top: 15px;
+            margin-bottom: 0;
+          }
+
+          .course-text {
+            p {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .processo-seletivo {
+    width: 100%;
+    background: #81CAA8;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px 0;
+
+    .item-processo {
+      width: 350px;
+      display: flex;
+      @extend %flex-center;
+      flex-direction: column;
+      text-align: center;
+      // padding: 15px 0;
+
+      h3 {
+        color: #FAFAFA;
+      }
+
+      p {
+        padding: 15px 0;
+        color: #000;
+      }
+
+      ul {
+        list-style-type: none;
+
+        li {
+          color: #000;
+          text-align: left;
+          padding: 5px 0;
+        }
+      }
+
+      a {
+        width: 100%;
+
+        .btn-inscreva {
+          width: 100%;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          background: #171717;
+          border-radius: 5px;
+          border: none;
+          color: #FAFAFA;
+          height: 45px;
+          font-weight: bold;
+          font-family: 'Open Sans';
+        }
+      }
+    }
+
+    @media($break-point) {
+      flex-direction: column;
+      // margin: 0 5px ;
+
+      .item-processo {
+        padding: 20px 10px;
+        width: initial;
+
+        a {
+          .btn-inscreva {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+
+  .calendario {
+    display: flex;
+    @extend %flex-center;
+    flex-direction: column;
+    padding: 20px 0 40px;
+
+    .title {
+      font-family: Ubuntu Mono;
+      color: #444053;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+    }
+
+    .datas-container {
+      display: flex;
+      @extend %flex-center;
+
+
+      .data {
+        background: #F0F0F0;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 50%;
+        margin: 10px 20px;
+      }
+
+      // @media( $break-point ) {
+
+      //   .data {
+      //   }
+      // }
+    }
+
+    @media($break-point) {
+      .title {
+        margin: 0;
+        text-align: center;
+      }
+      .datas-container {
+        flex-direction: column;
+
+        .data {
+          margin: 20px 10px;
+        }
+      }
+    }
+  }
+
+  .animation {
+    opacity: 0;
+  }
+
+  .animation-init {
+    animation: showText 0.75s linear;
+    opacity: 1;
+  }
+
+  @keyframes showText {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
