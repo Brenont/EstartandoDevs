@@ -227,6 +227,24 @@ body {
     }
   }
 
+  .inform-covid {
+    display: flex;
+    @extend %flex-center;
+    flex-direction: column;
+    padding: 20px 0 40px;
+
+    h1 {
+      font-family: Ubuntu Mono;
+      color: #444053;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+    }
+
+    p {
+
+    }
+  }
+
   .calendario {
     display: flex;
     @extend %flex-center;
@@ -287,6 +305,14 @@ body {
   .animation-init {
     animation: showText 0.75s linear;
     opacity: 1;
+  }
+
+  .text-danger {
+    color: maroon;
+  }
+
+  .text-green {
+    color: $green-devs;
   }
 
   @keyframes showText {
